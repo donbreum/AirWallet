@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.breum.airwallet.MainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="clear"
+        android:onClick="clearBT"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="refresh"
+        android:onClick="refreshBT"/>
+
+    <TextView
+        android:id="@+id/title_listview"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#2F75A4"
+        android:gravity=
+            "center"
+        android:text="Tilgængelige enheder"
+        android:textColor="#FFFFFF"
+        android:textSize="35dp"/>
+
+
+    <ListView
+        android:id="@+id/listDevices"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</android.widget.LinearLayout>
